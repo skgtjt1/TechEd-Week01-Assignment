@@ -8,6 +8,7 @@ body {
   margin: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: white;
 }
 
 header {
@@ -16,7 +17,14 @@ header {
   position: fixed;
   background-color: lightseagreen;
   width: 100vw;
+  height: 100px;
   align-items: center;
+  z-index: 1; /* this is super important! keeps it above the rest of the page */
+}
+
+header img {
+  height: 100px;
+  padding-left: 50px;
 }
 
 a {
@@ -48,31 +56,31 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 100px;
 }
 
 section {
   display: flex;
   height: 100vh;
-
+  justify-content: space-evenly;
   /* width: 1920px; */
 }
 
 #topsection {
-  /* background-color: lightblue; */
+  background-color: rgba(139, 25, 130, 0.6);
+  background-blend-mode: lighten;
   background-image: url(./images/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
-  /* justify-content: space-between; */
+  background-blend-mode: lighten;
 }
 
 .textcontentdiv {
   display: flex;
   flex-direction: column;
-  width: 33%;
-  justify-content: center;
+  width: 20%;
+  justify-content: space-around;
 }
 
 #textcontent1 {
@@ -81,17 +89,27 @@ section {
   padding: 8px;
 }
 
-.picturesdiv {
+#topsection .picturesdiv {
   display: flex;
   width: 33%;
-  flex-direction: column;
+  flex-direction: column-reverse;
+}
+
+#picture1 {
+  /* border: 5px solid black; */
+
+  margin-bottom: 350px;
+}
+
+#filler {
+  height: 10%;
 }
 
 .biglinkdiv {
   flex-direction: column;
   display: flex;
   /* justify-content: left; */
-  width: 33%;
+  width: 20%;
   justify-content: flex-end;
   align-items: center;
   position: relative;
@@ -101,6 +119,7 @@ section {
   border: 3px solid black;
   border-radius: 5px;
   font-size: larger;
+  width: 100px;
   color: black;
   font-weight: bold;
   background-color: white;
@@ -108,23 +127,43 @@ section {
   padding-bottom: 10px;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 20%;
   text-align: center;
   position: absolute;
+  margin-bottom: 40px;
 }
 
 .biglink:hover {
-  background-color: red;
-  color: blue;
+  background-color: rgba(255, 0, 0, 0.322);
+  color: rgba(0, 0, 255, 0.733);
 }
 
 #middlesection {
+  background-color: rgba(226, 99, 40, 0.5);
+  background-blend-mode: lighten;
   flex-direction: row-reverse;
   background-image: url(./images/bg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+#middlesection .picturesdiv {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+}
+
+#middlesection .picturesdiv img {
+  padding-top: 100px;
+}
+
+#middlesection.picturesdiv {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: end; */
 }
 
 #textcontent2 {
@@ -134,7 +173,8 @@ section {
 }
 
 #bottomsection {
-  background-color: orange;
+  background-color: rgba(19, 131, 93, 0.5);
+  background-blend-mode: lighten;
   background-image: url(./images/bg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,7 +182,18 @@ section {
   height: 100vh;
 }
 
-#textcontent1 {
+#bottomsection .picturesdiv {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+}
+
+#bottomsection .picturesdiv img {
+  padding-top: 100px;
+  filter: grayscale(0.8);
+}
+
+#textcontent3 {
   background-color: aliceblue;
   border-radius: 15px;
   padding: 8px;

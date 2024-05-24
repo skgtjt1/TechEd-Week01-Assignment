@@ -9,13 +9,13 @@
     <!-- Deferred so that html is read out before js script runs -->
     <title>Facts about the London Underground</title>
   </head>
-  <body>
+  <body id="top">
     <header>
-      <img src="https://picsum.photos/200/100" alt="" id="logo" />
+      <img src="./images/train.png" alt="" id="logo" />
       <h1 id="title">The London underground</h1>
       <nav class="navigation">
-        <a href="#topsection" class="navlinks">Home</a>
-        <a href="#topsection" class="navlinks">Top</a>
+        <a href="#top" class="navlinks">Home</a>
+        <a href="#top" class="navlinks">Top</a>
         <a href="#middlesection" class="navlinks">Middle</a>
         <a href="#bottomsection" class="navlinks">End</a>
         <a href="#footersection" class="navlinks">Footer</a>
@@ -30,14 +30,16 @@
             aperiam numquam totam laborum perspiciatis vero ratione sequi
             placeat neque repudiandae ad, assumenda ipsa!
           </p>
+          <p id="textcontent1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+            aspernatur minus, consequuntur amet dolorem consequatur distinctio
+            aperiam numquam totam laborum perspiciatis vero ratione sequi
+            placeat neque repudiandae ad, assumenda ipsa!
+          </p>
+          <div id="filler"></div>
         </div>
         <div class="picturesdiv">
-          <img
-            src="https://picsum.photos/500/300"
-            alt=""
-            id=""
-            class="pictures"
-          />
+          <img src="./images/picture1.webp" alt="" id="picture1" />
         </div>
         <div class="biglinkdiv">
           <a href="#middlesection" class="biglink">NEXT SECTION</a>
@@ -45,14 +47,17 @@
       </section>
       <section id="middlesection">
         <div class="picturesdiv">
-          <img src="https://picsum.photos/500/300" alt="" id="" />
+          <img src="./images/picture2.jpg" alt="" id="" />
         </div>
         <div class="textcontentdiv">
           <p id="textcontent2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
             assumenda reprehenderit consequatur dolor natus architecto ducimus
             distinctio pariatur accusantium aut porro nisi ad. Omnis ab velit
-            ullam accusantium neque vitae.
+            ullam accusantium neque vitae. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Labore fuga et aliquam consectetur
+            animi, ea porro repellendus quia. Est reiciendis voluptatum sunt
+            magnam officiis at obcaecati expedita fugiat autem in.
           </p>
         </div>
         <div class="biglinkdiv">
@@ -60,6 +65,9 @@
         </div>
       </section>
       <section id="bottomsection">
+        <div class="picturesdiv">
+          <img src="./images/picture3.webp" alt="" id="" />
+        </div>
         <div class="textcontentdiv">
           <p id="textcontent3">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -68,9 +76,7 @@
             architecto quaerat error, quisquam porro. Illo, natus.
           </p>
         </div>
-        <div class="picturesdiv">
-          <img src="https://picsum.photos/500/300" alt="" id="" />
-        </div>
+
         <div class="biglinkdiv">
           <a href="#topsection" class="biglink">Back to start</a>
         </div>
