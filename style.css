@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: lightseagreen;
+  width: 100vw;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 33%;
+}
+
+.navlinks {
+  border: 3px solid white;
+  font-size: larger;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.navlinks:hover {
+  background-color: lightskyblue;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 100px;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+
+  /* width: 1920px; */
+}
+
+#topsection {
+  /* background-color: lightblue; */
+  background-image: url(./images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* justify-content: space-between; */
+}
+
+.textcontentdiv {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  justify-content: center;
+}
+
+#textcontent1 {
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.picturesdiv {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+}
+
+.biglinkdiv {
+  flex-direction: column;
+  display: flex;
+  /* justify-content: left; */
+  width: 33%;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.biglink {
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: larger;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 20%;
+  text-align: center;
+  position: absolute;
+}
+
+.biglink:hover {
+  background-color: red;
+  color: blue;
+}
+
+#middlesection {
+  flex-direction: row-reverse;
+  background-image: url(./images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#textcontent2 {
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+#bottomsection {
+  background-color: orange;
+  background-image: url(./images/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#textcontent1 {
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
