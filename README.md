@@ -14,7 +14,7 @@ _Correct use of semantic HTML elements, including header, footer, nav._
 
 _Correct use of CSS absolute positioning for overlaying text_
 
-- I used absolute positioning within a relative positioning parent div on my "next page" links.
+- I used absolute positioning within a relative positioning parent div on my "next section" links.
 
 _Correct use of CSS Flexbox for layout and nav links._
 
@@ -39,17 +39,25 @@ _What went really well and what could have gone better?_
 
 - I built out the structure and basic CSS styling quite quickly, but it took some time to figure out how to properly implement the background images I chose. In the end I found "background-blend-mode: lighten;" combines with a background colour and can be used to reduce opacity and other effects on the background image.
 
+- I'm happy with the navbar and the smooth scrolling through the site, although the site does look rather old-fashioned. I'm hoping to improve on that through the course.
+
+- Another thing I would do differently next time is probably not use 3 x flex column divs for each page, it made positioning elements a little harder and also made the final site a little too repetitive to look at.
+
 _Detailing useful external sources that helped you complete the assignment (e.g Youtube tutorials)._
 
--MDN, W3schools, google, pexels were the main sources of info I used.
+- MDN, W3schools, google, pexels were the main sources of info I used.
 
 _Describing errors or bugs you encountered while completing your assignment._
 
--
+- Manny helped to solve a bug with the fixed position navbar, the divs for the top section were overlapping the links when scrolling through the page. To solve this, the header was given a Z-index of 1 to force it to be the top element in the page, since no other z-indexes were defined.
+
+- The site only looks as intended on a desktop monitor currently.
 
 Requesting feedback about a specific part of your submission.
 
-# PLAN
+- Are there "best practices" when it comes to the way classes and IDs are assigned to HTML elements? I feel like there are many many ways to do it and I'd like to be more consistent going forward.
+
+# MY PLAN
 
 Wireframe on okso
 Make walking skeleton
