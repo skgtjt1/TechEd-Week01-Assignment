@@ -29,7 +29,11 @@ header img {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: uppercase; /* I was all links to have no underline and always be uppercase */
+}
+
+#title {
+  font-size: 3rem;
 }
 
 .navigation {
@@ -80,25 +84,24 @@ section {
   display: flex;
   flex-direction: column;
   width: 20%;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
-#textcontent1 {
+#topsection .textcontent1 {
   background-color: aliceblue;
   border-radius: 15px;
   padding: 8px;
 }
 
 #topsection .picturesdiv {
+  /* rather than make a specific ID for each picture section, I thought I could use this method */
   display: flex;
-  width: 33%;
+  width: 45%;
   flex-direction: column-reverse;
+  justify-content: center;
 }
 
 #picture1 {
-  /* border: 5px solid black; */
-
-  margin-bottom: 350px;
 }
 
 #filler {
@@ -108,11 +111,17 @@ section {
 .biglinkdiv {
   flex-direction: column;
   display: flex;
-  /* justify-content: left; */
-  width: 20%;
+  /* justify-content: flex-end; */
+  width: 15%;
   justify-content: flex-end;
   align-items: center;
   position: relative;
+}
+
+#topsection .biglinkdiv .textcontent1 {
+  position: absolute;
+  top: 350px;
+  width: 100%;
 }
 
 .biglink {
@@ -123,6 +132,7 @@ section {
   color: black;
   font-weight: bold;
   background-color: white;
+  bottom: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 1rem;
@@ -139,7 +149,7 @@ section {
 
 #middlesection {
   background-color: rgba(226, 99, 40, 0.5);
-  background-blend-mode: lighten;
+  background-blend-mode: lighten; /* found this interesting blending method from a google search */
   flex-direction: row-reverse;
   background-image: url(./images/bg2.jpg);
   background-repeat: no-repeat;
@@ -154,8 +164,21 @@ section {
   flex-direction: column;
 }
 
+#middlesection .biglinkdiv .textcontent1 {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
 #middlesection .picturesdiv img {
   padding-top: 100px;
+}
+
+#middlesection .textcontent1 {
+  background-color: cornsilk;
+  /* color: antiquewhite; */
+  border-radius: 15px;
+  padding: 8px;
 }
 
 #middlesection.picturesdiv {
@@ -188,7 +211,15 @@ section {
   flex-direction: column;
 }
 
+#bottomsection .textcontent1 {
+  background-color: darkslategray;
+  color: antiquewhite;
+  border-radius: 15px;
+  padding: 8px;
+}
+
 #bottomsection .picturesdiv img {
+  /*trying a different method of aligning the image here instead of absolute/relative */
   padding-top: 100px;
   filter: grayscale(0.8);
 }
@@ -199,7 +230,33 @@ section {
   padding: 8px;
 }
 
+#shelterpic {
+  position: absolute;
+  width: 300px;
+  bottom: 200px;
+  border: 5px solid grey;
+}
+
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footernav {
+  align-items: center;
+  display: flex;
+}
+
+.footerlinks {
+  border: 3px solid white;
+  font-size: larger;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.footerlinks:hover {
+  background-color: lightgreen;
 }
